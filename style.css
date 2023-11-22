@@ -1,0 +1,41 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+ }
+body {
+    background-color: floralwhite;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navBar {
+    background-color: rgb(119, 126, 126);
+     height: 18vh;
+    }
+
+    .lista {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+       
+        padding-top: 10vh;
+    }
+    .categorias {
+        line-height: 9vh;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+.navegacao {
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 6vw;
+    color: black;
+    list-style-type: none;
+    
+  }

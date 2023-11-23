@@ -11,11 +11,12 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: #202020;
     background-color: rgb(192, 94, 45);
     padding: 20px;
+    line-height: 10px;
     }
 
 .nav-itens {
@@ -28,21 +29,40 @@ font-size: 20px;
     padding-left: 20px;
     color: #202020;
     text-decoration:none ;
+    list-style:  none;
 }
 .logo {
     font-weight: 800;
     font-size: 25px;
 }
+#imgC {
+  margin-right: 3vw;
+
+}
+.btn>a {
+    text-decoration:none ;
+    list-style:  none;
+color: #fff;
+}
+button>a {
+    text-decoration:none ;
+    list-style:  none;
+color: #fff;
+}
 .login {
+    text-decoration:none ;
+    list-style:  none;
     padding: 5px 15px;
     font-size: 15px;
     background-color: #202020;
     border: none;
     color: #fff;
     border-radius: 5px;
+
 }
 .cadastro {
-    
+    text-decoration:none ;
+    list-style:  none;
     padding: 5px 15px;
     font-size: 15px;
     background-color: #202020;
@@ -51,7 +71,8 @@ font-size: 20px;
     border-radius: 5px;
 }
 #carrinho {
-    
+    text-decoration:none ;
+    list-style:  none;
     padding: 5px 15px;
     font-size: 15px;
     background-color: #202020;
@@ -59,6 +80,4 @@ font-size: 20px;
     border: none;
     border-radius: 5px;
 }
-.carrinho {
-    
-}
+

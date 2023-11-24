@@ -15,7 +15,7 @@ nav {
     align-items: center;
     color: #202020;
     background-color: rgb(192, 94, 45);
-    padding: 20px;
+    padding: 40px;
     line-height: 10px;
     }
 
@@ -80,4 +80,23 @@ color: #fff;
     border: none;
     border-radius: 5px;
 }
+ .cards {
+    display: flex;
+   justify-content: center;
+}
 
+.banner img {
+    height: 420px;
+    width: 800px;
+    margin-top: 3vh;
+    margin-left: 30vw;
+}
+.card {
+    height: 400px;
+    width: 500px;
+    background-color: #202020;
+    border-radius: 15px;
+    margin : 70px;
+   
+  
+}

@@ -113,37 +113,27 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
    background-color: floralwhite;
    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-#moletom {
+#moletom , #camisaBasica , #moletomVerde {
     border: 1px solid
 }
-#camisaBasica {
-    border: 1px solid
-}
-#moletomVerde {
-    border: 1px solid
-}
+    
+
 #imagem1 {
     margin : 20px;
     height: 300px;
     width: 300px;
     border-radius: 10px;
-    border: 1px solid
-
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   
 }
-#imagem2 {
+#imagem2 , #imagem3 {
     margin: 20px;
     height: 300px;
     width: 250px;
   border-radius: 10px;
-    border: 1px solid
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-#imagem3 {
-    margin: 20px;
-    height: 300px;
-    width: 250px;
-    border-radius: 10px;
-    border: 1px solid
-}
+
 .comprar {
     font-weight: 600;
     border-radius: 10px;

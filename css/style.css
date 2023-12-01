@@ -122,8 +122,8 @@ transition: 0.5s;
     font-size: larger;
     }
 
+
 .modelos {
-    text-align: center;
     display: flex;
     justify-content: center;
 }
@@ -137,6 +137,7 @@ transition: 0.5s;
  width: 600px;
    display: flex;
   justify-content: space-around;
+
 
 }
 .slots {
@@ -152,6 +153,12 @@ transition: 0.5s;
   }
 #moletom , #camisaBasica , #moletomVerde {
     text-align: center;
+    color: #fff;
+    text-shadow: 
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
 
 }
 
@@ -185,4 +192,36 @@ cursor: pointer;
 .comprar:hover {
     transition: 0.5s background;
     background-color: rgb(192, 94, 45);
+}
+.promo {
+    text-align: center;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh
+}
+.row {
+    display: flex;
+ width: 70vw;
+    
+}
+input[type="text"],input[type="email"],input[type="tel"],input[type="submit"]{
+    padding: 10px;
+    flex: 1;
+    margin: 20px;
+}
+input[type="submit"]{
+    background-color: black;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    transition-duration: 0.5s;
+    border: solid 2px rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.67);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
 }

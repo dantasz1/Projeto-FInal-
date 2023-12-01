@@ -46,7 +46,7 @@
         <section>
             <div class="imgPrincipal">
                 <img src="../imagens/molelo1.png.jpg" alt="" onclick="">
-                <p>Camiseta Preta</p>
+                <p id="camisetaPreta">Camiseta Preta</p>
             </div>
         </section>
         <div class="modelos">
@@ -83,17 +83,21 @@
         </section>
 
     </div>
-    <section>
-        <div class="footer">
-            <h2>
-                Receba Promoções
-            </h2>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <button id="enviar">Enviar</button>
+</section>
+<h2 class="promo">Receba Promoções</h2>
+<section class="formulario">
+    
+    <form action="contato" class="contato" id="contato">
+        <div class="row">
+            <input type="text" name="nome" id="inome" placeholder="Insira seu Nome" required minlength="3" maxlength="35">
+            <input type="email" name="email" id="iemail" placeholder="Insira seu e-mail" required>
         </div>
-    </section>
+        <div class="row">
+            <input type="tel" name="telefone" id="itelefone" placeholder="Insira seu Telefone" maxlength="11" minlength="9" required>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</section>
     <script src="../js/index.js"></script>
 </body>
 

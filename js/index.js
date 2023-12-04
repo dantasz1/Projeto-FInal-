@@ -15,7 +15,28 @@ constructor (produto,preco,img,id){
 }
  roupas = new Roupas ('Camisa slim preta',  100 ,['imagens/camiseta preta.png ',''])
 
- 
+// Função que recupera valores e nomes de itens do localStorage e os exibe dentro de uma div.
+function exibirValoresENomesNaDiv() {
+    // Recupera valores do localStorage
+    let produto = window.localStorage.getItem('produto');
+    let preco = window.localStorage.getItem('preco');
+    let imagem = JSON.parse(window.localStorage.getItem('imagem'));
+    let id = window.localStorage.getItem('Id');
+
+    // Exibe os valores na div com o ID 'infoProduto' (altere conforme necessário).
+    document.getElementById('infoProduto').innerHTML = `
+        <p>Nome do Produto: ${produto}</p>
+        <p>Preço: ${preco}</p>
+        <p>ID: ${id}</p>
+        <p>Imagem: ${imagem.join(', ')}</p>
+    `;
+}
+
+// Exemplo de chamada da função.
+exibirValoresENomesNaDiv();
+
+
+
  
  
  

@@ -1,38 +1,48 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
-.pecas > .img1{
-    background-color: black;
-    height: 60vh;
-    width: 40vw;
-    display: block;
+.divGrande>.imgGrande {
+    background-color: rgb(10, 10, 10);
+    height: 79vh;
+    width: 30vw;
+    margin-top: 2vh;
 }
-.pecas div{
+
+.divPequenas>.img {
+
     background-color: black;
     height: 25vh;
-    width: 12.35vw;
-    margin-bottom: 10px;
-    margin-left: 0.5vw;
-    margin-right: 0.7vw;
-    display: inline-block;
+    width: 12.00vw;
+margin-top: 2vh;
+
 }
-.tudo{
+
+.imagens {
+    display: flex;
+    gap: 1vw;
+   justify-content: left;
+}
+
+.tudo {
+    margin-left: 2vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10vw;
     margin-bottom: 10vh;
+    
 }
-.infos{
+
+.infos {
     display: flex;
     flex-direction: column;
-    gap: 10vh;
     font-size: 2em;
     flex: 0.5;
+    margin-left: 10vw;
 }
+
 input[type="number"],button{
     padding: 10px;
     flex: 1;
@@ -48,4 +58,5 @@ button:hover{
     background-color: rgba(0, 0, 0, 0.67);
     border-radius:10px ;
     border: solid 2px rgba(0, 0, 0, 0);
+    
 }

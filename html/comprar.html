@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprar</title>
-    <link rel="stylesheet" href="/css/style.comprar.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="../css/style.comprar.css">
+    <link rel="stylesheet" href="../html/home.html">
+    <script src="../js/index.js"></script>
 </head>
+
 <body>
     <section class="tudo">
-        <section class="pecas">
-            <div class="img1" id="img1" onclick=""></div>
-            <div class="img2" id="img2" onclick=""></div>
-            <div class="img3" id="img3" onclick=""></div>
-            <div class="img4" id="img4" onclick=""></div>
+        <section class="imagens">
+            <div class="divPequenas">
+                <div class="img" id="img2" onclick=""></div>
+                <div class="img" id="img3" onclick=""></div>
+                <div class="img" id="img4" onclick=""></div>
+            </div>
+            <div class="divGrande">
+                <div class="imgGrande" id="img1" onclick=""></div>
+            </div>
         </section>
+        <div id="infoProduto">
         <section class="infos">
             <h1 id="roupa"></h1>
             <h2 id="valor"></h2>
             <input type="number" name="quatidade" id="iquantidade" value="1">
-            <button onclick="adicionarCarrinho()">Adicionar ao carrinho</button>
+            <button>Adicionar ao carrinho</button>
         </section>
+    </div>
     </section>
 </body>
+
 </html>

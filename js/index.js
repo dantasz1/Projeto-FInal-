@@ -1,4 +1,41 @@
 
+class Roupas {
+Produto
+Preco
+Img
+Quantidade
+Id
+constructor (produto,preco,img,id){
+    this.Produto = produto
+    this.Preco = preco
+    this.Img = img
+    this.Quantidade = 0
+    this.Id = id
+}
+}
+ roupas = new Roupas ('Camisa slim preta',  100 ,['imagens/camiseta preta.png ',''])
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  // Função para salvar o nome de usuário no Local Storage
 function salvarCadastroElogin() {
     var nome = document.getElementById('nome').value;

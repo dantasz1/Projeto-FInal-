@@ -1,0 +1,15 @@
+.fotos {
+    height: 500px;
+    width: 600px;
+    background-color: black;
+}
+
+
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    font-size: 2em;
+    flex: 0.5;
+}

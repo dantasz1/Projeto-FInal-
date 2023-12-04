@@ -111,7 +111,7 @@ width: 1000px;
 border-radius: 7px;
 transition: 0.5s;
 }
-.imgPrincipal >:hover{
+.imgPrincipal > img:hover{
     transition-duration: 0.5s;
     border-radius: 10px;
     cursor: pointer;

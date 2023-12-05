@@ -13,7 +13,7 @@ constructor (produto,preco,img,id){
     this.Id = id
 }
 }
- const roupas1 = new Roupas ('Camisa slim preta',  100 ,['imagens/camiseta preta.png ', 'imagens/camiseta preta.png ', 'imagens/camiseta preta.png ', 'imagens/camiseta preta.png '] , 1)
+ const roupas1 = new Roupas ('Camisa slim preta',  100 ,['../imagens/camiseta preta.png ', '../imagens/camiseta preta.png ', '../imagens/camiseta preta.png ', '../imagens/camiseta preta.png '] , 1)
  const roupas2 = new Roupas ('Moletom Branco',  90 ,['imagens/moletom branco.png '  ], 2)
  const roupas3 = new Roupas ('Calça Jeans',  110 ,['imagens/calça jeans.png '  ], 3)
  const roupas4 = new Roupas ('Moletom Preto',  110 ,['imagens/moletomVerde.jpg '], 4)

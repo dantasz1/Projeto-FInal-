@@ -1,11 +1,12 @@
 
 const roupa = document.querySelector("#roupa")
 const valor = document.querySelector("#valor")
-const imagens = document.getElementsByClassName('img')   //'#img2', '#img3', '#img4'
+const imagens = document.getElementsByClassName('img')   
 
 window.addEventListener('load', e => {
     roupa.innerHTML = window.localStorage.getItem('nome')
-    valor.innerHTML = window.localStorage.getItem('valor')
+    const valorComCifrao = `$${window.localStorage.getItem('valor')}`;
+    valor.innerHTML = valorComCifrao;
     window.localStorage.getItem('img')
     window.localStorage.getItem('id')
     console.log(imagens)
@@ -13,7 +14,6 @@ window.addEventListener('load', e => {
      let imag = document.getElementById('img' + (i + 1))
      let url =   window.localStorage.getItem('img' + (i + 1))
         imag.src = url
-       
         console.log(url)
     });                    
        

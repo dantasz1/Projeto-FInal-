@@ -3,7 +3,24 @@
     margin: 0px;
     padding: 0px;
 }
-
+.nav-itens {
+    justify-content: left;
+display: flex;
+font-size: 20px;
+list-style-type:none;
+text-decoration: none;
+transition: 0.5s;
+}
+.menu:hover{
+    transition-duration: 0.3s;
+    font-size: 1.2em;
+}
+.nav-itens>li>a {
+    padding-left: 20px;
+    color: #202020;
+    text-decoration: none;
+    
+}
 .divGrande>.img {
     background-color: rgb(10, 10, 10);
     height: 79vh;
@@ -35,17 +52,24 @@ margin-top: 2vh;
 }
 
 .infos {
+    
     display: flex;
     flex-direction: column;
     font-size: 2em;
     flex: 0.5;
     margin-left: 10vw;
 }
+ #roupa , #valor {
+display: flex;
+text-align: center;
+margin: 4.5vh
+}
+
 
 input[type="number"],button{
     padding: 10px;
     flex: 1;
-    margin: 20px;
+    margin: 32px;
     text-align: center;
 }
 button{

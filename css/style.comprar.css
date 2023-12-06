@@ -4,7 +4,7 @@
     padding: 0px;
 }
 
-.divGrande>.imgGrande {
+.divGrande>.img {
     background-color: rgb(10, 10, 10);
     height: 79vh;
     width: 30vw;
@@ -58,4 +58,12 @@ button:hover{
     border-radius:10px ;
     border: solid 2px rgba(0, 0, 0, 0);
     
+}
+#img1 , #img2 , #img3  {
+    height: 25vh;
+    width: 12vw;
+}
+#img4 {
+    height: 79vh;
+    width: 30vw;
 }

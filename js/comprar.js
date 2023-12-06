@@ -10,23 +10,16 @@ window.addEventListener('load', e => {
     window.localStorage.getItem('id')
     console.log(imagens)
     Array.from(imagens).forEach((element , i ) => {
-    //  const url =   window.localStorage.getItem('img' + (i + 1))
-         element.style.backgroundImage = 'url(../imagens/camiseta preta.png)'
-        const url =  element.style.backgroundImage
-        element.style.backgroundColor = `red`
+     let imag = document.getElementById('img' + (i + 1))
+     let url =   window.localStorage.getItem('img' + (i + 1))
+        imag.src = url
+       
         console.log(url)
     });                    
        
     
     
-         //imagen[i].style.backgroundImage = 'https://media.geeksforgeeks.org/wp-content/uploads/20190529122828/bs21.png'
-
-
-    //   let img = document.createElement('img')
-    //    img.src ='https://media.geeksforgeeks.org/wp-content/uploads/20190529122828/bs21.png';
-    //  imagen[i].appendChild(img)
-     
-          
+           
   }
 
 )

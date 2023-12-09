@@ -15,12 +15,10 @@ window.addEventListener('load', e => {
      let url =   window.localStorage.getItem('img' + (i + 1))
         imag.src = url
         console.log(url)
-    });                    
-       
-    
-    
-           
+    });                       
   }
-
 )
+
+
+
 

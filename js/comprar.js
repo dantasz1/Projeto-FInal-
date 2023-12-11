@@ -19,6 +19,13 @@ window.addEventListener('load', e => {
   }
 )
 
-
-
-
+function TrocarPosicao() {
+  var imagem = document.getElementById('img1');
+imagem.addEventListener('click' , e => {
+  
+  var destino = document.getElementById('img4');         
+  imagem.parentNode.removeChild(imagem);
+  destino.appendChild(imagemClonada);
+})}
+TrocarPosicao()
+// var imagemClonada = imagem.cloneNode(true);

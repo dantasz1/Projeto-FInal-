@@ -13,11 +13,11 @@ constructor (produto,preco,img,id){
     this.Id = id
 }
 }
-//../imagens/camisa preta foto 1.png
- const roupas1 = new Roupas ('Camisa slim preta',  '$100' ,['../imagens/camiseta preta.png ', '../imagens/camisa preta foto 2.png ', '../imagens/camisa preta foto 3.png ', '../imagens/camisa preta foto 1.png'] , 1)
- const roupas2 = new Roupas ('Moletom Branco',  90 ,['imagens/moletom branco.png ' , 'imagens/moletom branco foto 1.png' , 'imagens/moletom-branco-foto-2.png' , 'imagens/moletom branco foto 3.png'  ], 2)
- const roupas3 = new Roupas ('Calça Jeans',  110 ,['imagens/calça jeans.png ' , 'imagens/calça jeans foto 1.png' , 'imagens/calça jeans foto 2.png' , 'imagens/calça jeans foto 3.png'   ], 3)
- const roupas4 = new Roupas ('Moletom Preto',  110 ,['imagens/moletomVerde.jpg ' , 'imagens/moletom preto foto 1.png' , 'imagens/moletom preto foto 2.png' , 'imagens/moletom preto foto 3.png'], 4)
+
+ const roupas1 = new Roupas ('Camisa slim preta',  '100' ,['../imagens/camiseta preta.png ', '../imagens/camisa preta foto 2.png ', '../imagens/camisa preta foto 3.png ', '../imagens/camisa preta foto 1.png'] , 1)
+ const roupas2 = new Roupas ('Moletom Branco',  '90' ,['../imagens/moletom branco.png ' , '../imagens/moletom branco foto 1.png' , '../imagens/moletom-branco-foto-2.png' , '../imagens/moletom branco foto 3.png'  ], 2)
+ const roupas3 = new Roupas ('Calça Jeans',  '110' ,['../imagens/calça jeans.png ' , '../imagens/calça jeans foto 1.png' , '../imagens/calça jeans foto 2.png' , '../imagens/calça jeans foto 3.png'   ], 3)
+ const roupas4 = new Roupas ('Moletom Preto',  '110' ,['../imagens/moletomVerde.jpg ' , '../imagens/moletom preto foto 1.png' , '../imagens/moletom preto foto 2.png' , '../imagens/moletom preto foto 3.png'], 4)
 
 //==========================================
 
@@ -54,7 +54,7 @@ for (let i = 0; i < 4; i++) {
 })
 const btn3 = document.getElementById('btn3')
 
-btn2.addEventListener('click' , e => {
+btn3.addEventListener('click' , e => {
 
     window.location.replace('./comprar.html') 
 
@@ -69,7 +69,7 @@ for (let i = 0; i < 4; i++) {
 })
 const btn4 = document.getElementById('btn4')
 
-btn2.addEventListener('click' , e => {
+btn4.addEventListener('click' , e => {
 
     window.location.replace('./comprar.html') 
 
@@ -80,6 +80,8 @@ for (let i = 0; i < 4; i++) {
     window.localStorage.setItem(('img' +(i + 1)) , roupas4.Img[i])
 }
 })
+
+
 
 
 

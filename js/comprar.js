@@ -30,10 +30,28 @@ for (let i = 0; i < 3; i++) {
 
 
   })}
+  
+    let botaoCarrinho = document.getElementById('btnCarrinho')
+   botaoCarrinho.addEventListener('click' , e => {
+    
+    let quantidade = Number (document.getElementById('iquantidade').value)
+    let id = window.localStorage.getItem('Id')
+    let array = []
+    let objeto = {
+      nome: window.localStorage.getItem('nome'),
+      valor: window.localStorage.getItem('valor') ,
+      quantidade: quantidade 
+    }
+    
+    array.push(objeto)
+    console.log(array)
+  })
+
+
+    
+
 
   
-  
-
 
 
 

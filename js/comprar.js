@@ -1,4 +1,3 @@
-
 const roupa = document.querySelector("#roupa")
 const valor = document.querySelector("#valor")
 const imagens = document.getElementsByClassName('img')   
@@ -33,19 +32,31 @@ for (let i = 0; i < 3; i++) {
   
     let botaoCarrinho = document.getElementById('btnCarrinho')
    botaoCarrinho.addEventListener('click' , e => {
+    if (JSON.parse(window.localStorage.getItem('array')) == undefined ) {
+       window.localStorage.setItem('array' , JSON.stringify([]) ) 
+    }
     
+   let arrayGet  = JSON.parse(window.localStorage.getItem('array'))
+     
     let quantidade = Number (document.getElementById('iquantidade').value)
-    let id = window.localStorage.getItem('Id')
-    let array = []
+    
     let objeto = {
       nome: window.localStorage.getItem('nome'),
       valor: window.localStorage.getItem('valor') ,
       quantidade: quantidade 
     }
+   arrayGet.push(objeto)
+
+   window.localStorage.setItem('array', JSON.stringify(arrayGet))
+    console.log(arrayGet)
+   
+
+    alert('Produto adicionado ao carrinho.')
     
-    array.push(objeto)
-    console.log(array)
   })
+
+
+
 
 
     

@@ -37,18 +37,32 @@ transition: 0.5s;
     text-decoration: none;
     
 }
+
 .titulo {
     display: flex;
     justify-content: center;
     margin-top: 2.5vh;
 }
 
-.table {
-    display: flex;
-    justify-content: center;
-    border-bottom: 10px solid #666;
-}
+.tabela {
+ display: flex;
+ justify-content: space-around;
+ word-spacing: 32vw;
 
+
+}
+.tabela > span {
+    display: flex;
+    justify-content: space-around;
+    word-spacing: 32vw;
+   
+   .
+   }
+
+.inf {
+   
+  
+}
 
 #carrinho{
     border: solid 1px black;

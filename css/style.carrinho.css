@@ -42,12 +42,14 @@ transition: 0.5s;
     display: flex;
     justify-content: center;
     margin-top: 2.5vh;
+    margin-bottom: 5vh;
 }
 
 .tabela {
  display: flex;
- justify-content: space-around;
- word-spacing: 32vw;
+ justify-content: center;
+ gap: 24.5vw;
+
 
 
 }
@@ -56,13 +58,11 @@ transition: 0.5s;
     justify-content: space-around;
     word-spacing: 32vw;
    
-   .
+   
    }
 
-.inf {
-   
-  
-}
+
+
 
 #carrinho{
     border: solid 1px black;

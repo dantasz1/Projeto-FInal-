@@ -2,6 +2,7 @@ window.addEventListener('load', e => {
 let total = 0
 let carrinhoDiv = document.getElementById('carrinho')
   let array = JSON.parse(window.localStorage.getItem('array'))
+ 
   for (let i = 0; i < array.length; i++) {
     console.log('entrando no for')
     let nome = array[i].nome
@@ -9,12 +10,11 @@ let carrinhoDiv = document.getElementById('carrinho')
     let qnt = array[i].quantidade
     console.log(nome, valor, qnt)
 
-    let divProduto = document.getElementById('produto')
-    let divPreco = document.getElementById('preco')
-    let divTotal = document.getElementById('total')
+    // let divProduto = document.getElementById('produto')
+    // let divPreco = document.getElementById('preco')
+    // let divTotal = document.getElementById('total')
 
-    
-
+   
 
     let produto = array[i]
     let valorzao = produto.Quantidade * produto.Preco
@@ -23,25 +23,77 @@ let carrinhoDiv = document.getElementById('carrinho')
 
     let vazio = true
     if (produto.quantidade > 0) {
+     
       console.log('entrando no if')
+      
       vazio = false
+      let img = document.createElement('img')
+    
+
+      img.style.width = '250px'
+      img.style.height = '150px'
+      img.style.margin = '40px'
+
+      switch (produto.nome) {
+        case 'Camisa slim preta': 
+
+          img.src = '../imagens/camiseta-preta-em-200x150.png'
+
+          break;
+
+          case 'Moletom Branco' :
+
+        img.src = '../imagens/200x200.jpg.png'
+      
+          break;
+
+          case 'Calça Jeans' :
+        img.src = '../imagens/calça-jeans foto 200x150.png'
+
+        break;
+        case 'Moletom Preto' :
+          img.src = '../imagens/moletom preto foto 200x150.png'
+        default:
+          break;
+      }
+
+     
+      
+    
       let text = document.createElement('p');
+      
+      text.style.borderBottom = '1px solid'
       text.style.display = 'flex';
       text.style.justifyContent = 'space-between';
-      text.style.width = '80%';
+      text.style.alignItems = 'center'
+      text.style.width = '100%';
       text.style.fontSize = '1.5em';
+
+
+
 
       let nome = document.createElement('span');
       nome.innerText = produto.nome;
+      nome.style.width = '400px'
+      nome.style.marginRight = '2vw'
+
+
+
 
       let qtd = document.createElement('span');
       qtd.innerText = `${produto.quantidade}x`;
-
+    qtd.style.marginRight = '12vw'
       
 
+
+
+      
       let preco = document.createElement('span');
+      preco.style.margin = '40px'
+      preco.style.marginRight = '6vw'
       preco.innerText = `R$${valor}`;
 
+      text.appendChild(img)
       text.appendChild(nome);
       text.appendChild(qtd);
       text.appendChild(preco);
@@ -49,7 +101,9 @@ let carrinhoDiv = document.getElementById('carrinho')
       carrinhoDiv.appendChild(text);
       let totalDiv = document.getElementById('total')
       totalDiv.innerHTML = `Total a Pagar: R$${total}`
+      totalDiv.style.marginTop = '10vh'
       totalDiv.style.fontSize = '1.5em'
+
       window.localStorage.setItem('total', total)
       // if (vazio) {
         // carrinhoDiv.innerHTML = 'Carrinho Vazio'

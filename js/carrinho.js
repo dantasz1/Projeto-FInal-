@@ -17,7 +17,7 @@ let carrinhoDiv = document.getElementById('carrinho')
    
 
     let produto = array[i]
-    let valorzao = produto.Quantidade * produto.Preco
+    let valorzao = Number(produto.Quantidade) * Number(produto.Preco)
     total += valorzao
 
 
@@ -84,8 +84,6 @@ let carrinhoDiv = document.getElementById('carrinho')
       qtd.innerText = `${produto.quantidade}x`;
     qtd.style.marginRight = '12vw'
       
-
-
 
       
       let preco = document.createElement('span');

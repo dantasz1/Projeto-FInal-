@@ -36,16 +36,28 @@ for (let i = 0; i < 3; i++) {
        window.localStorage.setItem('array' , JSON.stringify([]) ) 
     }
     
+    
    let arrayGet  = JSON.parse(window.localStorage.getItem('array'))
      
     let quantidade = Number (document.getElementById('iquantidade').value)
+
+    let nomeProduto = window.localStorage.getItem('nome');
+    let valorProduto = window.localStorage.getItem('valor');
     
-    let objeto = {
-      nome: window.localStorage.getItem('nome'),
-      valor: window.localStorage.getItem('valor') ,
-      quantidade: quantidade 
-    }
-   arrayGet.push(objeto)
+    let produtoExistente = arrayGet.find(item => item.nome === nomeProduto);
+
+    if (produtoExistente) {
+      produtoExistente.quantidade += quantidade;
+    } else {
+      let objeto = {
+        nome: nomeProduto,
+        valor: valorProduto,
+        quantidade: quantidade
+    };
+
+    arrayGet.push(objeto);
+}
+    
 
    window.localStorage.setItem('array', JSON.stringify(arrayGet))
     console.log(arrayGet)

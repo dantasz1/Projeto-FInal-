@@ -1,5 +1,6 @@
 window.addEventListener('load', e => {
-let total = 0
+  let total = 0
+  let vazio = true
 let carrinhoDiv = document.getElementById('carrinho')
   let array = JSON.parse(window.localStorage.getItem('array'))
  
@@ -10,18 +11,12 @@ let carrinhoDiv = document.getElementById('carrinho')
     let qnt = array[i].quantidade
     console.log(nome, valor, qnt)
 
-    // let divProduto = document.getElementById('produto')
-    // let divPreco = document.getElementById('preco')
-    // let divTotal = document.getElementById('total')
-
+    
    
 
     let produto = array[i]
-    let valorzao = Number(produto.Quantidade) * Number(produto.Preco)
-    total += valorzao
+    
 
-
-    let vazio = true
     if (produto.quantidade > 0) {
      
       console.log('entrando no if')
@@ -96,40 +91,66 @@ let carrinhoDiv = document.getElementById('carrinho')
       text.appendChild(qtd);
       text.appendChild(preco);
 
+
+
+      
+
       carrinhoDiv.appendChild(text);
+
+      total += valor
+    
       let totalDiv = document.getElementById('total')
       totalDiv.innerHTML = `Total a Pagar: R$${total}`
-      totalDiv.style.marginTop = '10vh'
+      totalDiv.style.marginTop = '5vh'
+      totalDiv.style.marginBottom = '5vh'
       totalDiv.style.fontSize = '1.5em'
 
       window.localStorage.setItem('total', total)
-      // if (vazio) {
-        // carrinhoDiv.innerHTML = 'Carrinho Vazio'
-        // carrinhoDiv.style.fontSize = '1.5em'
-      // }
-      // if (!vazio) {
-        // let apagarCarrinho = document.getElementById('apagar')
-        // let apagar = document.createElement('button')
-        // apagar.innerHTML = 'Limpar Carrinho'
-        // apagar.addEventListener("click", deleteCarrinho)
-        // apagarCarrinho.appendChild(apagar)
-        // apagar.style.padding = '10px'
-        // apagar.style.backgroundColor = 'white'
-        // apagar.style.color = 'red'
-        // apagar.style.border = 'solid 1px red'
-        // apagar.addEventListener("mouseover", function () {
-          // apagar.style.transitionDuration = '0.5s'
-          // apagar.style.borderRadius = '10px'
-          // apagar.style.cursor = 'pointer'
-        // })
-        // apagar.addEventListener("mouseout", function () {
-          // apagar.style.transitionDuration = '0.5s'
-          // apagar.style.borderRadius = '0px'
-          // apagar.style.cursor = 'default'
-        // })
-      // }
-
+      
+      
     }
+  }
+  if (vazio) {
+    carrinhoDiv.innerHTML = 'Carrinho Vazio'
+    carrinhoDiv.style.fontSize = '1.5em'
+  }
+  if (!vazio) {
+    let apagarCarrinho = document.getElementById('apagar')
+    let apagar = document.createElement('button')
+    
+   mexer = document.getElementById('divApagar')
+   mexer.style.display = 'flex'
+   mexer.style.justifyContent = 'center'
+   mexer.style.marginBottom = '30px'
+   
+
+    apagar.innerHTML = 'Limpar Carrinho'
+      apagarCarrinho.appendChild(apagar)
+    apagar.style.padding = '10px'
+    apagar.style.backgroundColor = 'white'
+    apagar.style.color = 'red'
+    apagar.style.border = 'solid 1px red'
+    
+    
+    
+    apagar.addEventListener("mouseover", function () {
+      apagar.style.transitionDuration = '0.5s'
+      apagar.style.borderRadius = '10px'
+      apagar.style.cursor = 'pointer'
+    })
+    apagar.addEventListener("mouseout", function () {
+      apagar.style.transitionDuration = '0.5s'
+      apagar.style.borderRadius = '0px'
+      apagar.style.cursor = 'default'
+      
+    })
+    apagar.addEventListener('click' , e => {
+      document.getElementById('carrinho').remove()
+      let totalDiv = document.getElementById('total')
+      totalDiv.innerHTML = ''
+      window.localStorage.setItem('array' , JSON.stringify([]))
+      
+    })
   }
 
 }

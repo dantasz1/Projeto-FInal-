@@ -14,10 +14,10 @@ constructor (produto,preco,img,id){
 }
 }
 
- const roupas1 = new Roupas ('Camisa slim preta',  '100' ,['../imagens/camiseta preta.png ', '../imagens/camisa preta foto 2.png ', '../imagens/camisa preta foto 3.png ', '../imagens/camisa preta foto 1.png'] , 1)
- const roupas2 = new Roupas ('Moletom Branco',  '90' ,['../imagens/moletom branco.png ' , '../imagens/moletom branco foto 1.png' , '../imagens/moletom-branco-foto-2.png' , '../imagens/moletom branco foto 3.png'  ], 2)
- const roupas3 = new Roupas ('Calça Jeans',  '110' ,['../imagens/calça jeans.png ' , '../imagens/calça jeans foto 1.png' , '../imagens/calça jeans foto 2.png' , '../imagens/calça jeans foto 3.png'   ], 3)
- const roupas4 = new Roupas ('Moletom Preto',  '110' ,['../imagens/moletomVerde.jpg ' , '../imagens/moletom preto foto 1.png' , '../imagens/moletom preto foto 2.png' , '../imagens/moletom preto foto 3.png'], 4)
+ const roupas1 = new Roupas ('Camisa slim preta',  100 ,['../imagens/camiseta preta.png ', '../imagens/camisa preta foto 2.png ', '../imagens/camisa preta foto 3.png ', '../imagens/camisa preta foto 1.png'] , 1)
+ const roupas2 = new Roupas ('Moletom Branco',  90 ,['../imagens/moletom branco.png ' , '../imagens/moletom branco foto 1.png' , '../imagens/moletom-branco-foto-2.png' , '../imagens/moletom branco foto 3.png'  ], 2)
+ const roupas3 = new Roupas ('Calça Jeans',  110 ,['../imagens/calça jeans.png ' , '../imagens/calça jeans foto 1.png' , '../imagens/calça jeans foto 2.png' , '../imagens/calça jeans foto 3.png'   ], 3)
+ const roupas4 = new Roupas ('Moletom Preto',  110 ,['../imagens/moletomVerde.jpg ' , '../imagens/moletom preto foto 1.png' , '../imagens/moletom preto foto 2.png' , '../imagens/moletom preto foto 3.png'], 4)
 
 //==========================================
 

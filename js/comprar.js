@@ -31,6 +31,7 @@ for (let i = 0; i < 3; i++) {
   })}
   
     let botaoCarrinho = document.getElementById('btnCarrinho')
+    
    botaoCarrinho.addEventListener('click' , e => {
     if (JSON.parse(window.localStorage.getItem('array')) == undefined ) {
        window.localStorage.setItem('array' , JSON.stringify([]) ) 
@@ -38,16 +39,21 @@ for (let i = 0; i < 3; i++) {
     
     
    let arrayGet  = JSON.parse(window.localStorage.getItem('array'))
-     
     let quantidade = Number (document.getElementById('iquantidade').value)
 
     let nomeProduto = window.localStorage.getItem('nome');
     let valorProduto = window.localStorage.getItem('valor');
     
-    let produtoExistente = arrayGet.find(item => item.nome === nomeProduto);
+    let produtoExistente = arrayGet.find(item => item.nome == nomeProduto);
 
     if (produtoExistente) {
       produtoExistente.quantidade += quantidade;
+console.log(produtoExistente)
+
+      let valorTotalProduto = parseInt(produtoExistente.valor) * produtoExistente.quantidade;
+      produtoExistente.valor = valorTotalProduto
+
+      
     } else {
       let objeto = {
         nome: nomeProduto,
@@ -56,16 +62,17 @@ for (let i = 0; i < 3; i++) {
     };
 
     arrayGet.push(objeto);
-}
-    
-
+ }
+ 
    window.localStorage.setItem('array', JSON.stringify(arrayGet))
-    console.log(arrayGet)
-   
 
+    console.log(arrayGet)
+  
     alert('Produto adicionado ao carrinho.')
-    
-  })
+  });
+ 
+
+  
 
 
 

@@ -50,9 +50,11 @@ for (let i = 0; i < 3; i++) {
       produtoExistente.quantidade += quantidade;
 console.log(produtoExistente)
 
-      let valorTotalProduto = parseInt(produtoExistente.valor) * produtoExistente.quantidade;
-      produtoExistente.valor = valorTotalProduto
+let valorTotalProduto = valorProduto * produtoExistente.quantidade;
+produtoExistente.valor = valorTotalProduto; 
 
+      // let valorTotalProduto = parseInt(produtoExistente.valor) * produtoExistente.quantidade;
+      // produtoExistente.valor = valorTotalProduto
       
     } else {
       let objeto = {

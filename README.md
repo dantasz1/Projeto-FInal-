@@ -45,8 +45,12 @@ Contribuições são bem-vindas! Se você tiver sugestões, melhorias ou correç
 
 ## Screenshots do Projeto
 
-![Screenshot 1](screenshots/screenshot1.png)
-*Inserir legendas ou descrições para as imagens, se necessário.*
+![image](https://github.com/dantasz1/Projeto-FInal-/assets/134528492/ceac7e95-c58a-448f-b2c5-302ee87ee1f7)
+*Home.*
 
-![Screenshot 2](screenshots/screenshot2.png)
-*Inserir legendas ou descrições para as imagens, se necessário.*
+![image](https://github.com/dantasz1/Projeto-FInal-/assets/134528492/2062e6ef-13e1-4a0f-9eaf-5b49d9e3a949)
+*produtos.*
+
+![image](https://github.com/dantasz1/Projeto-FInal-/assets/134528492/ece199ee-7978-48ea-b0a9-050850ab388f)
+*carrinho vazio*
+

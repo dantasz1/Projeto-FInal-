@@ -53,4 +53,6 @@ Contribuições são bem-vindas! Se você tiver sugestões, melhorias ou correç
 
 ![image](https://github.com/dantasz1/Projeto-FInal-/assets/134528492/ece199ee-7978-48ea-b0a9-050850ab388f)
 *carrinho vazio*
+![image](https://github.com/dantasz1/Projeto-FInal-/assets/134528492/15b242bd-179b-45b2-8de8-e4f89f7c3084)
+*carrinho cheio*
 
